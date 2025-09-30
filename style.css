@@ -1,0 +1,207 @@
+:root{
+  --background: #0f172a;
+  --primary: #6366f1;
+  --secondary: #10b981;
+  --tertiary: #6365f128;
+  --alert: #ef4444;
+  --text: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+main {
+  margin: 10px auto;
+  padding-inline: 20px;
+  max-width: 1000px;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary) !important;
+}
+
+header {
+  margin-inline: 20px;
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, var(--background), #0f172a00);
+  position: sticky;
+  top: 0;
+}
+
+#main_link{
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+#main_link:hover{
+  color: var(--primary);
+}
+
+header button {
+  background-color: var(--primary) !important;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--background);
+  transition: all 0.2s ease-in-out;
+}
+
+header a:hover {
+  color: var(--primary);
+}
+
+table {
+  margin: 20px auto;
+  border: none;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+table a {
+  text-decoration: none;
+  color: var(--primary);
+  width: 100%;
+  text-align: left;
+  display: block;
+}
+
+table a:hover {
+  color: var(--background);
+}
+
+thead {
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+th,
+td {
+  border: 1px solid var(--primary);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: var(--tertiary);
+}
+
+form:not(#buy_form) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--tertiary);
+  border-radius: 12px;
+}
+
+#buy_form{
+  margin: 0;
+}
+
+#buy_form input{
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea,
+form input[type="submit"]:not(#buy_id) {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  border: none;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea{
+  border: 1px solid #ccc;
+}
+
+label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--secondary);
+}
+
+form .checkbox_div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+form div input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+form div label {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 5px var(--tertiary);
+}
