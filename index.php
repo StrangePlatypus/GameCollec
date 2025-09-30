@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php require_once "header.php"; ?>
-    <main>
+    <main id="homepage">
         <h1>
             Bienvenue sur GameCollec
         </h1>
@@ -18,26 +18,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<style>
-    main{
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        margin: auto;
-        align-items: center;
-    }
-
-    h1{
-        color: #4CAF50;
-    }
-
-    a{
-        text-decoration: none;
-        color: #4CAF50;
-    }
-
-    a:hover{
-        color: #226624ff;
-    }
-</style>

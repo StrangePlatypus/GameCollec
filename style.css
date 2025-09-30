@@ -56,7 +56,7 @@ header button {
   background-color: var(--primary) !important;
 }
 
-header a {
+header a{
   text-decoration: none;
   color: var(--background);
   transition: all 0.2s ease-in-out;
@@ -64,6 +64,16 @@ header a {
 
 header a:hover {
   color: var(--primary);
+}
+
+#homepage a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: all 0.2s ease-in-out;
+}
+
+#homepage a:hover {
+  color: var(--secondary);
 }
 
 table {
